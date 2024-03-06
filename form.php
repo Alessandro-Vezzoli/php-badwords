@@ -12,7 +12,7 @@ $pwdFind = $_GET['pwd'];
 
 
 echo 'Nome: ' . $nameNotCensor . '<br>';
-echo 'Lunghezza Nome: ' . strlen($nameNotCensor);
+echo 'Lunghezza Nome: ' . strlen($nameNotCensor) . '<br><br>';
 
-var_dump (str_replace($pwdFind, '***', $nameNotCensor));
+echo 'Frase con parola censurata: ' . (str_replace($pwdFind, '***', $nameNotCensor));
 ?>
