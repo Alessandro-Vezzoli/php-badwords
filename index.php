@@ -3,9 +3,11 @@
 //Creare un form PHP che permetta di inviare due campi: 
     //un paragrafo 
     //ed una parola da censurare.
-    $homepage = file_get_contents('http://http://localhost/PHP/php-badwords/form.php');
-    echo $homepage; 
-$_POST  
+    
+
+    $name = 'prova1';
+
+
 ?>
 
 
@@ -20,11 +22,11 @@ $_POST
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-       <form action=" " method="post">
-        <label for="name"> Il tuo nome</label>
-        <input type="text" name="name" id="name">
-        <label for="lastname"> La tua password</label>
-        <input type="password" id="pwd" name="pwd"> 
+       <form action="./form.php" method="get"  >
+        <label for="name">Paragrafo</label>
+        <input type="text" name="name" id="name"><br><br><br>
+        <label for="pwd">Censurata</label>
+        <input type="text" id="pwd" name="pwd"> <br><br>
 
         <button
             type="submit"

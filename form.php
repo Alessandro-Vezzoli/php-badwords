@@ -7,19 +7,12 @@
 */
 
 
-?>
-<!DOCTYPE html>
+$nameNotCensor = $_GET['name'];
+$pwdFind = $_GET['pwd'];
 
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
-        
-    </body>
-</html>
+
+echo 'Nome: ' . $nameNotCensor . '<br>';
+echo 'Lunghezza Nome: ' . strlen($nameNotCensor);
+
+var_dump (str_replace($pwdFind, '***', $nameNotCensor));
+?>
